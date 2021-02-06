@@ -1,5 +1,6 @@
 const express = require("express"); // import express
-const hubsRouter = require('./routers/hubs-router.js'); //Step 2A: Import Router
+const casesRouter = require('./routers/caseesRouter.js'); //Step 2A: Import Router
+const headerRouter = require('./routers/headerRouter.js'); //Step 2A: Import Router
 const server = express(); // instantiate server
 server.use(express.json()); // configure server
 
@@ -11,7 +12,8 @@ function passCheck(req, res, next) { // 1. Create Middleware
 	}
 }
 
-server.use('/api/hubs', passCheck, hubsRouter); // 2. Add to route instantiation
+server.use('/api/cases', passCheck, casesRouter); // 2. Add to route instantiation
+server.use('/api/header', headerRouter);
 
 server.get('/', (req, res) => {
 	res.status(200).json({ serverMessage: 'Test endpoint' });

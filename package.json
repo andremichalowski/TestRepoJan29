@@ -1,0 +1,24 @@
+{
+  "name": "TestRepoJan29",
+  "version": "1.0.0",
+  "description": "Server/BE DBg",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andremichalowski/TestRepoJan29.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andremichalowski/TestRepoJan29/issues"
+  },
+  "homepage": "https://github.com/andremichalowski/TestRepoJan29#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
